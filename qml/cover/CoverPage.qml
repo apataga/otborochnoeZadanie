@@ -1,31 +1,19 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 
-CoverBackground {
+Cover {
     Label {
-        id: nameOfFile
-        anchors.verticalCenter: parent.verticalCenter
-        anchors.left: parent.left
-        anchors.right: parent.right
+        id: nameOfFileLabel
+        anchors { verticalCenter: parent.verticalCenter; left: parent.left; right: parent.right; margins: 5 }
         text: file.selectedFileName
+        font.pixelSize: Theme.fontSizeSmall
         truncationMode: TruncationMode.Fade
     }
 
     Label {
-        anchors.top: nameOfFile.bottom
+        id: currentPageLabel
+        anchors.top: nameOfFileLabel.bottom
         anchors.horizontalCenter: parent.horizontalCenter
         text: qsTr("Page ") + file.selectedFileCurrentPage
     }
-
-//    CoverActionList {
-//        id: coverAction
-
-//        CoverAction {
-//            iconSource: "image://theme/icon-cover-next"
-//        }
-
-//        CoverAction {
-//            iconSource: "image://theme/icon-cover-pause"
-//        }
-//    }
 }

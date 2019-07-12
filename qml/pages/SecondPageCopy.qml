@@ -4,7 +4,7 @@ import Sailfish.Pickers 1.0
 import harbour.MyPdfReader.pdf 1.0
 
 Page {
-    //    id: pageTwo
+    id: pageTwo
 
     // The effective value will be restricted by ApplicationWindow.allowedOrientations
 

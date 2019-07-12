@@ -9,7 +9,7 @@
 PDFLoader::PDFLoader(QQuickItem *parent)  :
     QQuickPaintedItem(parent) {
     currentPageNumber = 0;
-    resolution = 300;
+    resolution = 200;
 }
 
 /*!
