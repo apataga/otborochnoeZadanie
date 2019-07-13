@@ -13,6 +13,6 @@ ApplicationWindow
         id: file
         property string selectedFile
         property string selectedFileName
-        property int selectedFileCurrentPage
+        property string selectedFileCurrentPage
     }
 }
