@@ -15,7 +15,7 @@ Page {
 
         PDFLoader {
             id: pdfLoader
-            anchors.fill:parent
+            anchors.fill: parent
             onCurrentPageChanged: file.selectedFileCurrentPage = qsTr("Page ") + pdfLoader.currentPage
 
             onSendErrorTextToQml: {
@@ -26,10 +26,8 @@ Page {
         VerticalScrollDecorator {}
 
         Row {
-            id:row
             spacing:Theme.paddingLarge
-            anchors.horizontalCenter: parent.Center
-            anchors.bottom: parent.bottom
+            anchors { horizontalCenter: parent.Center; bottom: parent.bottom }
 
             //добавить элемент Button с названием "Previous" для переключения на предыдущую старницу документа
 

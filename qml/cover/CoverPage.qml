@@ -1,11 +1,11 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 
-Cover {
+CoverBackground {
     Label {
+        anchors { verticalCenter: parent.verticalCenter; top: parent.top; topMargin: 10 }
         text: qsTr("NewPdfLoader")
         font.pixelSize: Theme.fontSizeLarge
-        anchors { verticalCenter: parent.verticalCenter; top: parent.top; topMargin: 10 }
     }
 
     Label {
@@ -17,9 +17,7 @@ Cover {
     }
 
     Label {
-        id: currentPageLabel
-        anchors.top: fileNameLabel.bottom
-        anchors.horizontalCenter: parent.horizontalCenter
+        anchors { top: fileNameLabel.bottom; horizontalCenter: parent.horizontalCenter }
         text: file.selectedFileCurrentPage
     }
 }
